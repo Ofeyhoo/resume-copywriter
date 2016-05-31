@@ -1,0 +1,359 @@
+html,body{width:100%;height:100%;margin:0;padding:0;font:16px/1.5 "微软雅黑","sans-serif";color:#3D5F93}
+body{background:#1b1f2b;}
+p,dl,dd,h2,h3{margin:0;}
+ul{margin:16px 0 0;}
+strong{color:#3e5f94;padding:0 3px;}
+a{text-decoration:none;}
+
+
+.clear-fix:after{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+/* icon */
+.fa{
+	padding-right:8px;
+	color:#3E5F94;
+}
+
+.fa-user,.fa-location-arrow,.fa-phone-square,.fa-envelope{
+	color:#fff;
+}
+
+/* 简历容器 */
+.container{
+    width:1100px;
+    margin:0 auto;
+    background:#1b1f2b;
+    border:4px solid hsla(0,0%,100%,.2);
+    box-sizing:border-box;
+    border-radius:4px;}
+
+/* 头部 */
+.g-header{
+    width:100%;
+    position:relative;
+}
+
+/* 左边头像简介 */
+.m-intro{   
+    background-color:#D8E2EC;
+    width:auto;
+    position:relative;
+}
+.m-intro .img{
+	display:inline-block;
+	width:210px;
+	height:210px;
+	background:url(../img/me.jpg) no-repeat;
+	border-radius:50%;
+	transform:scale(0.7);
+	margin:0;
+	border:6px solid hsla(0,0%,100%,.7);
+}
+.m-intro .title{
+	position:absolute;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	transform: translateY(-50%);
+	margin-left: 210px;
+}
+.m-intro .title .name{
+	font-size:36.0pt;
+	margin:0;
+}
+
+/* 右边联系方式 */
+.m-contact{
+    position:absolute;
+    right:0;
+    top:0;
+	background-color:#3E5F94;
+	width:35%;
+	color:#fff;	
+	height:228px;
+	font-style:normal;
+}
+
+.m-contact .list{	
+	position:absolute;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
+	margin-top:0;
+	list-style:none;
+}
+
+.m-contact .age,.m-contact .address,.m-contact .phone,.m-contact .mail{
+	font-family:"微软雅黑","sans-serif";
+	color:#fff;
+}
+
+
+
+/* 简历正文 */
+.g-article{
+    background-color:#fff;
+    width:100%;    /* 1100px */
+    padding:16px 0 80px;
+    padding-right:5%;
+    box-sizing:border-box;
+}
+
+/* 简历正文左边标题 */
+.m-con .title-box{
+	float:left;
+    text-align:center;
+    width:22%;    /* 246px */
+    margin:2% 2% 0 0;  
+}
+
+.m-con .title-box .title{
+	display: inline-block;
+	width:54%;          /* 132px */
+	font-size:1.5rem;  /* 24px */
+	line-height: 1.9;  /* 44px */
+	border:3px solid #3e5f94;
+	font-weight:600;
+}
+
+/* 简历正文右边内容 */
+.m-con .con-box{   
+    overflow: hidden;
+    color:#666;
+    padding-top:2.7%;
+    padding-bottom: 2.7%;
+    border-bottom:2px solid #d8e2ec;
+}
+
+.m-con .con-h{
+	width:100%;
+	line-height: 30px;
+	font-size:1.125rem;  /* 18px */
+}
+
+/* 无icon的 list */
+.m-con .con-box-c{
+	margin-bottom:25px;
+}
+
+.m-con .con-box-c:last-child{
+	margin-bottom:0;
+}
+
+/* icon list */
+.m-con .con-icon-ul{
+    list-style:none;
+    padding-left:20px;
+}
+.m-con .con-icon-ul .li{
+	display:inline-block;
+    margin-right:15px;
+}
+
+/* icon list with background */
+.m-con .con-icon-back{
+	float:right;
+	font-size:1rem;
+	line-height:1.8;
+	font-weight:normal;
+	padding:0 10px;	
+	background:#D8E2EC;
+	margin-left:10px;
+	border-radius:6px;
+	color:inherit;
+}
+
+.m-con .con-icon-back:hover,.m-con .con-icon-back:hover .fa{
+    background-color:#3E5F94;
+    color:#fff;
+}
+
+
+/* icon list without background */
+.m-con .con-not-link{
+	background:#fff;
+}
+
+.m-con .con-not-link:hover,.m-con .con-not-link:hover .fa{
+	background:#fff;	
+	color:#3E5F94;
+}
+
+/* hover with image */
+.m-con .certificate{
+   position:relative;
+}
+.m-con .certificate .img{	
+	position:absolute;
+    width:154px;
+	height:110px;
+	border:7px solid #fff;
+    box-shadow:0 0 5px 0 #888;
+    right:90px;
+	bottom:-40px;
+	border-radius:4px;
+	transition:opacity 1s ease;
+	opacity:0;
+	visibility:hidden;
+	box-sizing:border-box;
+}
+
+.m-con .certificate .wangyi{
+    background:url(../img/web-major1.png) no-repeat;
+    background-size:cover;
+}
+
+.m-con .certificate .python{
+    background:url(../img/python.jpg) no-repeat;
+    background-size:cover;
+}
+
+.m-con .certificate:hover .img{
+	visibility:visible;
+	opacity:1;
+}
+
+/* 公司链接 */
+.m-con .fa-link.company{
+	padding-left:8px;
+}
+
+.m-con .fa-link.company:hover{
+	color:rgb(89, 142, 222);
+}
+
+
+/* 内容区user图标 */
+.m-con .fa-user{
+	color:#3D5F93;
+}
+
+/* 内容区星星图标 */
+.m-con .star{
+    margin-top:0;
+}
+
+.m-con .work:hover .fa-star{
+    color:#FAF601;
+    background: #4890D8;
+}
+.m-con .work:hover{
+    background: #4890D8;
+}
+/* 内容区作品展示 */
+.m-con .work{
+    float:none;
+    display:inline-block;
+    margin-left:0;
+    margin-bottom:4px;
+}
+
+/* 自我评价区和技能区 */
+.m-con .about-self,.m-con .skill{
+	margin-top:0;
+}
+
+/* 技能区 */
+.m-con .skill{
+    list-style:none;
+    padding-left:0;
+}
+.m-con .skill-p,.m-con .skill-c{
+    display:inline-block;
+    border-radius:4px;
+    height:10px;
+}
+.m-con .skill-p{
+    width:60%;
+    background:#D8E2EC;
+    vertical-align:middle;
+    position:relative;
+}
+.m-con .skill-c{
+    position:absolute;
+    top:0;
+    left:0; 
+    background:#3D5F93;
+}
+.m-con .activity{
+    width:70%;
+}
+.m-con .english{
+    width:53%;
+}
+.m-con .css{
+    width:57%;
+}
+.m-con .html{
+    width:55%;
+}
+.m-con .js{
+    width:50%;
+}
+
+.m-con .skill-text1,.m-con .skill-text2{
+   display:inline-block;
+   font-size:1rem;
+}
+.m-con .skill-text1{
+    margin-right:0.9rem;   
+    width:4rem;
+    line-height:2;
+}
+.m-con .skill-text2{
+    margin-left:0.9rem;
+    width:2rem;
+}
+
+
+/* 响应页面 */
+@media screen and (max-width:1100px){
+	body{
+    	background:#fff;
+    }
+    .container{
+    	width:100%;
+    	margin-top:0;
+    	border:none;
+    }
+}
+
+@media screen and (max-width:680px){
+    html{
+    	font-size:13px;
+    }
+    .m-intro .img{
+       display:none;
+    }
+    .m-intro{
+    	height:260px;
+    	background:#3E5F94;
+    	color:#fff;
+    	text-align:center;
+    }
+    .m-intro .title{  
+        margin:0;
+        left:50%;
+        top:60px;
+        -webkit-transform:translate(-50%,-50%); /* 手机端transform失效，等下在检验看看 */
+        transform:translate(-50%,-50%);     
+    }
+    .m-contact{
+    	width:100%;
+    	height:150px;
+    	top:110px;
+    	background:transparent;
+    }
+    .m-contact .list{
+    	padding-left:10px;
+    }
+}
+
+
+
+
+
+
